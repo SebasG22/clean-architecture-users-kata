@@ -17,6 +17,6 @@ export class Email extends ValueObject {
   }
 
   static validate(email: string) {
-    return email.includes("@");
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
   }
 }

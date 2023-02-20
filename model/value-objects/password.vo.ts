@@ -4,7 +4,7 @@ export interface PasswordProps {
   value: string;
 }
 
-export class Password extends ValueObject{
+export class Password extends ValueObject {
   constructor(public value: string) {
     super();
   }
@@ -15,8 +15,8 @@ export class Password extends ValueObject{
     }
     throw Error("Password not valid");
   }
-  
-  static validate(password: string){
-   return password.length > 6;
+
+  static validate(password: string) {
+    return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password);
   }
 }

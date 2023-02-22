@@ -1,5 +1,14 @@
 {
     "compilerOptions": {
-      "types": ["vitest/globals"]
-    }
+      "types": ["vitest/globals"],
+      "outDir": "./build",
+      "esModuleInterop": true,
+    },
+    "include": [
+      "./src/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+    ]
   }

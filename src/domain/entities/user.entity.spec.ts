@@ -1,3 +1,4 @@
+import { describe, it, expect, afterEach, vi } from "vitest";
 import { Email } from "../value-objects/email.vo";
 import { Password } from "../value-objects/password.vo";
 import { User } from "./user.entity";

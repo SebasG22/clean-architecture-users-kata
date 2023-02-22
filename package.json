@@ -1,13 +1,14 @@
 {
   "name": "@vitest/example-test",
-  "type": "module",
   "private": true,
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "start": "yarn build && node ./build/presentation/terminal.js"
   },
   "devDependencies": {
     "@vitest/ui": "latest",
@@ -16,5 +17,8 @@
   },
   "stackblitz": {
     "startCommand": "npm run test:ui"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.4.5"
   }
 }

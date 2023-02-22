@@ -1,3 +1,4 @@
+import { describe, it, expect, afterEach, vi } from "vitest";
 import { Password } from "./password.vo";
 import { ValueObject } from "./value-object.model";
 

@@ -8,17 +8,24 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "start": "yarn build && node ./build/presentation/main.js"
+    "start": "yarn build && node ./build/presentation/main.js",
+    "dev": "vite"
   },
   "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
     "@vitest/ui": "latest",
-    "vite": "latest",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
     "vitest": "latest"
   },
   "stackblitz": {
     "startCommand": "npm run test:ui"
   },
   "dependencies": {
-    "@clack/prompts": "^0.4.5"
+    "@clack/prompts": "^0.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

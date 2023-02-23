@@ -52,7 +52,7 @@ export class UserPresenter {
     }
   }
 
-  private getUsers() {
+  getUsers() {
     const users = this.getUserListUseCase.execute();
     this.view.listUsers(users);
   }

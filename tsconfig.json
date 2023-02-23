@@ -3,6 +3,7 @@
       "types": ["vitest/globals"],
       "outDir": "./build",
       "esModuleInterop": true,
+      "jsx": "react-jsx"
     },
     "include": [
       "./src/**/*"

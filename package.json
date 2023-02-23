@@ -8,7 +8,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "start": "yarn build && node ./build/presentation/terminal.js"
+    "start": "yarn build && node ./build/presentation/main.js"
   },
   "devDependencies": {
     "@vitest/ui": "latest",
